@@ -15,6 +15,9 @@ class BooksController < ApplicationController
   def new
     @book = Book.new
   end
+  def show
+      @book_review = BookReview.new
+  end
 
   # GET /books/1/edit
   def edit
